@@ -180,13 +180,14 @@
 }
 
 .main h1 {
-  position: relative;
+  position: absolute;
   top: -24px;
   left: 8px;
   font-size: 1rem;
 }
 
 .projects {
+  position: relative;
   grid-area: 1 / 1 / 3 / 2;
   border: solid 1px black;
   display: grid;
@@ -204,11 +205,13 @@
 }
 
 .announcements {
+  position: relative;
   grid-area: 1 / 2 / 2 / 3;
   border: solid 1px black;
 }
 
 .trending {
+  position: relative;
   grid-area: 2 / 2 / 3 / 3;
   border: solid 1px black;
 }
