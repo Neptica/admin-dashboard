@@ -21,7 +21,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 0.6fr 3fr;
+  grid-template-rows: 0.4fr 3fr;
 }
 
 .dashboard {
@@ -76,22 +76,24 @@
 }
 
 .menu {
+  height: 150px;
   background-color: white;
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template-columns: 7fr 4fr;
-  grid-template-rows: 1.5fr 2fr;
+  grid-template-rows: 1fr 2fr;
 }
 
 .searchbar {
   display: flex;
   justify-content: right;
   align-items: center;
-  padding: 20px 35px;
+  gap: 20px;
+  padding: 5px 0;
 }
 
 .searchbar input {
-  height: 70%;
+  height: 50%;
   width: 90%;
   border-radius: 25px;
   border: none;
@@ -126,13 +128,13 @@
 .greeting {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-left: 80px;
+  gap: 10px;
+  padding-left: 40px;
 }
 
 .greeting img {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 .greet {
@@ -145,8 +147,8 @@
 }
 
 .greet h1 {
-  padding-top: 7px;
-  font-size: 1.5rem;
+  padding-top: 2px;
+  font-size: 1.2rem;
 }
 
 .options {
