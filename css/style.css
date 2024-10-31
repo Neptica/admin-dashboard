@@ -88,7 +88,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 5px 0;
 }
 
@@ -104,6 +104,11 @@
 
 .searchbar input:focus {
   outline: none;
+}
+
+.searchbar img {
+  height: 30px;
+  width: 30px;
 }
 
 .account {
