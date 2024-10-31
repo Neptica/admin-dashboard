@@ -188,13 +188,13 @@
   position: absolute;
   top: -24px;
   left: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .projects {
   position: relative;
   grid-area: 1 / 1 / 3 / 2;
-  border: solid 1px black;
+  border-radius: 10px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -202,18 +202,29 @@
 }
 
 .project__card {
-  padding: 40px 20px 30px 40px;
+  border-left: 10px solid yellow;
+  position: relative;
+  padding: 30px 10px 30px 20px;
   background-color: white;
   border-radius: 10px;
-  border: 1px solid black;
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 3fr 1fr;
   grid-template-columns: 2fr 1fr;
   /* TODO: Box Shadow */
 }
 
 .info {
   grid-area: 1 / 1 / 2 / 3;
+}
+
+.info h3 {
+  color: black;
+  font-size: 1rem;
+}
+
+.info p {
+  font-size: 0.8rem;
+  font-weight: light;
 }
 
 .interact {
@@ -228,14 +239,51 @@
 }
 
 .announcements {
+  background-color: white;
   position: relative;
   grid-area: 1 / 2 / 2 / 3;
   border-radius: 10px;
-  border: solid 1px black;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.acard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.acard h3 {
+  font-size: 1rem;
+  color: black;
+}
+
+.account-link h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: black;
+}
+
+.acard p,
+.account-link p {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.account-link {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
 }
 
 .trending {
+  background-color: white;
   position: relative;
   grid-area: 2 / 2 / 3 / 3;
-  border: solid 1px black;
+  border-radius: 10px;
+  padding: 15px 20px 20px 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
