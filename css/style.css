@@ -15,6 +15,7 @@
   font-family: roboto;
   --blue: #3b82f6;
   --grey-blue: #eff6ff;
+  --yellow: #fcd34d;
 }
 
 .container {
@@ -202,7 +203,7 @@
 }
 
 .project__card {
-  border-left: 10px solid yellow;
+  border-left: 10px solid var(--yellow);
   position: relative;
   padding: 30px 10px 30px 20px;
   background-color: white;
@@ -275,7 +276,13 @@
 .account-link {
   display: flex;
   align-items: center;
+  gap: 15px;
   font-weight: 100;
+}
+
+.account-link img {
+  height: 40px;
+  width: 40px;
 }
 
 .trending {
@@ -286,4 +293,5 @@
   padding: 15px 20px 20px 20px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 10px 30px;
 }
